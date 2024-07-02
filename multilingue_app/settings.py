@@ -57,7 +57,9 @@ ROOT_URLCONF = 'multilingue_app.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'blog', 'templates'),  # Assurez-vous que ce chemin est correct
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
