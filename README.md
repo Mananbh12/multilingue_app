@@ -119,18 +119,3 @@ DATABASES = {
 
 - **Chatbot** : Utilisez `chatbot.py` pour intégrer un chatbot basé sur un modèle de langage comme GPT-3 dans votre application Django, permettant aux utilisateurs de poser des questions et de recevoir des réponses générées par le modèle.
 
----
-
-### requirements.txt
-
-```plaintext
-Django>=3.2.0,<4.0.0
-transformers>=4.11.3
-torch>=1.10.0
-```
-
-- **Django** : Framework web utilisé pour développer l'application.
-- **transformers** : Bibliothèque Hugging Face Transformers pour utiliser des modèles NLP comme RAG.
-- **torch** : Bibliothèque PyTorch pour le support de calcul tensoriel utilisé par transformers.
-
----
