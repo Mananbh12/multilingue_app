@@ -1,0 +1,25 @@
+<!-- chatbot.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+</head>
+<body>
+    <h1>Chatbot</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="user_input">Votre question :</label><br>
+        <textarea id="user_input" name="user_input" rows="4" cols="50"></textarea><br>
+        <button type="submit">Envoyer</button>
+    </form>
+    {% if user_input %}
+        <h3>Votre question :</h3>
+        <p>{{ user_input }}</p>
+        <h3>Réponse du chatbot :</h3>
+        <p>{{ chatbot_response }}</p>
+    {% endif %}
+</body>
+</html>

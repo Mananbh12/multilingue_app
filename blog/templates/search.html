@@ -1,0 +1,26 @@
+<!-- search_results.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résultats de la recherche</title>
+</head>
+<body>
+    <h1>Résultats de la recherche</h1>
+    <form method="get">
+        <label for="query">Rechercher :</label><br>
+        <input type="text" id="query" name="query" value="{{ query }}"><br>
+        <button type="submit">Rechercher</button>
+    </form>
+    {% if results %}
+        <h3>Résultats :</h3>
+        <ul>
+            {% for result in results %}
+                <li>{{ result }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>
