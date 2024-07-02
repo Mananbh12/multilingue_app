@@ -1,17 +1,3 @@
-### requirements.txt
-
-Ce fichier `requirements.txt` liste les dépendances Python nécessaires pour exécuter le projet Django avec une fonctionnalité de RAG et un chatbot.
-
-```plaintext
 Django>=3.2.0,<4.0.0
 transformers>=4.11.3
 torch>=1.10.0
-```
-
-- **Django** : Framework web utilisé pour développer l'application.
-- **transformers** : Bibliothèque Hugging Face Transformers pour utiliser des modèles NLP comme RAG.
-- **torch** : Bibliothèque PyTorch pour le support de calcul tensoriel utilisé par transformers.
-
----
-
-Assurez-vous de personnaliser ces instructions en fonction des spécificités de votre projet et de votre environnement de développement.
