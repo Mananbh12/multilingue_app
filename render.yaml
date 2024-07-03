@@ -4,4 +4,4 @@ services:
     env: python
     plan: free
     buildCommand: pip install -r requirements.txt && pip install gunicorn
-    startCommand: gunicorn multilingue_app.wsgi:application --bind 0.0.0.0:$PORT
+    startCommand: gunicorn multilingue_app.wsgi:blog --bind 0.0.0.0:$PORT
